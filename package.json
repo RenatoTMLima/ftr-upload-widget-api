@@ -14,7 +14,8 @@
     "test-mig": "dotenv -e .env.test -- drizzle-kit migrate",
     "pretest": "pnpm run test-mig",
     "pretest-w": "pnpm run test-mig",
-    "build": "tsup-node"
+    "build": "tsup-node",
+    "start": "node dist/infra/http/server.js"
   },
   "keywords": [],
   "author": "",
